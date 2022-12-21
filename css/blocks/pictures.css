@@ -1,0 +1,59 @@
+.pictures {
+  display: grid;
+  grid-template-areas:
+    "first second third fourth"
+    "first fifth fifth sixth";
+}
+.pictures__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pictures__first {
+  grid-area: first;
+}
+.pictures__second {
+  grid-area: second;
+}
+.pictures__third {
+  grid-area: third;
+}
+.pictures__fourth {
+  grid-area: fourth;
+}
+.pictures__fifth {
+  grid-area: fifth;
+}
+.pictures__sixth {
+  grid-area: sixth;
+}
+
+@media (max-width: 990px) {
+  .pictures {
+    grid-template-areas:
+      "first second third"
+      "first fifth fifth"
+      "sixth sixth fourth";
+  }
+}
+
+@media (max-width: 580px) {
+  .pictures {
+    grid-template-areas:
+      "second first"
+      "third first"
+      "fifth fifth"
+      "fourth sixth";
+  }
+}
+
+@media (max-width: 425px) {
+  .pictures {
+    grid-template-areas:
+      "second first"
+      "third first"
+      "fifth fifth"
+      "fourth fourth"
+      "sixth sixth";
+  }
+}

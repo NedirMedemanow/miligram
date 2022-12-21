@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  color: #000;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+}
+button {
+  all: initial;
+}
+.container {
+  max-width: 100%;
+  min-width: 320px;
+}
+.wrap {
+  min-width: 320px;
+  max-width: 990px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.shadow {
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+.border {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
